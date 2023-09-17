@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- Remotes -->
-    <remote name="prathamdubey2005" fetch="https://github.com/prathamdubey2005" />
+    <remote name="AbzRaider" fetch="https://github.com/AbzRaider" />
     <remote name="realme-mt6785-devs" fetch="https://github.com/realme-mt6785-devs" />
     <remote name="LineageOS" fetch="https://github.com/LineageOS" />
 
     <!-- Device tree -->
     <project path="device/realme/RM6785"
-             name="android_device_realme_RM6785-arrow"
-             remote="prathamdubey2005"
-             revision="arrow-13.1"
+             name="android_device_realme_RM6785"
+             remote="AbzRaider"
+	    revision="lineage-20"
              clone-depth="1" />
 
     <project path="vendor/realme/RM6785"
-             name="proprietary_vendor_realme_RM6785"
-             remote="prathamdubey2005"
-             revision="thirteen"
+             name="android_vendor_realme_RM6785"
+             remote="AbzRaider"
+             revision="base"
              clone-depth="1" />
 
     <project path="kernel/realme/mt6785"
              name="android_kernel_realme_mt6785"
-             remote="prathamdubey2005"
-             revision="bolt"
+             remote="AbzRaider"
+             revision="lineage-plus"
              clone-depth="1" />
 
     <!-- Firmware and other dependencies -->
-    <remove-project name="android_device_mediatek_sepolicy_vndr" />
 
     <project path="device/mediatek/sepolicy_vndr"
              name="android_device_mediatek_sepolicy_vndr"
-             remote="realme-mt6785-devs"
+             remote="AbzRaider"
              revision="lineage-20"
              clone-depth="1" />
 
-    <remove-project name="android_hardware_mediatek" />
-
+  
     <project path="hardware/mediatek"
              name="android_hardware_mediatek"
              remote="realme-mt6785-devs"
@@ -42,9 +40,9 @@
              clone-depth="1" />
 
     <project path="vendor/realme-firmware"
-             name="proprietary_vendor_realme-firmware"
-             remote="realme-mt6785-devs"
-             revision="master"
+             name="android_vendor_realme-firmware"
+             remote="AbzRaider"
+             revision="R"
              clone-depth="1" />
 
     <!-- App packages -->
