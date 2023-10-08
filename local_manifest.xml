@@ -15,7 +15,7 @@
     <project path="vendor/realme/RM6785"
              name="android_vendor_realme_RM6785"
              remote="AbzRaider"
-             revision="base"
+             revision="C20-OSS"
              clone-depth="1" />
 
     <project path="kernel/realme/mt6785"
